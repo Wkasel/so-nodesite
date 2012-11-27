@@ -13,14 +13,16 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.static(path.join(__dirname, 'public')));
   app.use(lessMiddleware({
     dest: __dirname + '/public/css',
-    src: __dirname + '/public/css/less',
+    src: __dirname + '/src/less',
     prefix: '/css',
-    compress: true
+    force: true,
+    compress: false,
+    debug: true
   }));
-
+  app.use(express.static(__dirname + '/public'));
+  app.use("/css", express.static(__dirname + '/public'));
 });
 
 
