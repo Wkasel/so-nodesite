@@ -12,7 +12,7 @@ app.configure(function(){
   app.set('view engine', 'ejs');
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
-  app.use(express.methodOverride());
+  // app.use(express.methodOverride());
   app.use(lessMiddleware({
     dest: __dirname + '/public/css',
     src: __dirname + '/src/less',
