@@ -1,0 +1,353 @@
+<!doctype html>
+
+<html><head>
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="resources/images/streamonce/favicon-3.png">
+    <title>streamOnce</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css"> -->
+    
+    
+    <link rel="stylesheet" href="css/jquery-ui-1.9.0.custom.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/prodactive.css" type="text/css">
+    
+    
+    <!-- HTML5 shim for IE backwards compatibility -->
+    	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        
+    
+<style type="text/css"></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="resources/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="use" src="resources/js/libs/require/use-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/newAppRouter" src="resources/js/modules/newAppRouter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/core" src="resources/js/core/core.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/view/headerView" src="resources/js/modules/login/view/headerView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/view/errorView" src="resources/js/modules/login/view/errorView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/model/user" src="resources/js/modules/login/model/user.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spin" src="resources/js/libs/spin/spin.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="resources/js/libs/backbone/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/view/newLoginView" src="resources/js/modules/login/view/newLoginView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/model/newUser" src="resources/js/modules/login/model/newUser.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/view/loadingView" src="resources/js/modules/login/view/loadingView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/login/view/404View" src="resources/js/modules/login/view/404View.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/mailingList/view/MailingListView" src="resources/js/modules/mailingList/view/MailingListView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/mailingList/model/collection/mailingLists" src="resources/js/modules/mailingList/model/collection/mailingLists.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/systems/view/systemsView" src="resources/js/modules/systems/view/systemsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/systems/model/collection/systems" src="resources/js/modules/systems/model/collection/systems.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/myPlace/view/myPlaceView" src="resources/js/modules/myPlace/view/myPlaceView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/myPlace/model/collection/myPlaces" src="resources/js/modules/myPlace/model/collection/myPlaces.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/jiveGroups/view/jiveGroupsView" src="resources/js/modules/jiveGroups/view/jiveGroupsView.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/jiveGroups/model/collection/jiveGroups" src="resources/js/modules/jiveGroups/model/collection/jiveGroups.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="i18n" src="resources/js/libs/require/i18n-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="events" src="resources/js/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="resources/js/libs/require/text-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="handlebars" src="resources/js/libs/handlebars/handlebars-1.0.rc.1.js"></script><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone" src="resources/js/libs/backbone/backbone.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/mailingList/model/mailingList" src="resources/js/modules/mailingList/model/mailingList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/systems/model/exchange" src="resources/js/modules/systems/model/exchange.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/systems/model/enabledisable" src="resources/js/modules/systems/model/enabledisable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/systems/model/system" src="resources/js/modules/systems/model/system.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/myPlace/model/myPlace" src="resources/js/modules/myPlace/model/myPlace.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/jiveGroups/model/jiveGroup" src="resources/js/modules/jiveGroups/model/jiveGroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nls/base" src="resources/js/nls/base.js"></script></head><body>
+
+<!-- Chris Added -->
+<div class="wrapper">
+
+    <div id="header"><div><div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+
+            <!--add placeholder for menus in small resolution screens-->
+            
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">streamOnce</a>
+            <!--build the navigation menu-->
+            <!--for action menus (with no sub menus) create a one item list-->
+            
+
+            
+            <ul class="nav">
+
+                <!--if there's a tooltip then add it-->
+                <li class=""><a href="#" action="content" rel="tooltip" title="content">Content</a>
+                </li><li><a href="#" action="teamplace" rel="tooltip" title="teamplace">Team Places</a>
+                </li><li class="active"><a href="#" action="myplace" rel="tooltip" title="myplace">My Social Inbox</a>
+                </li>
+
+            </ul>
+
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ilan@streamonce.com <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <!--<li class="divider"></li>-->
+                        <li><a href="#" action="logout"><i class="icon-off"></i> logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!--</div>-->
+        </div>
+    </div>
+</div></div></div>
+    <div id="breadcrumbs"></div>
+    <div id="content">
+        <div id="content_header"></div>
+        <div id="content_body"><div><style type="text/css">
+    .saveMesg {
+        visibility: hidden;
+    }
+
+    .spinner {
+        display: none;
+    }
+
+    .error {
+        outline: none;
+        border-color: #ae0000;
+        box-shadow: 0 0 10px #ae0000;
+    }
+
+    .so_myplacerules {
+        width:90%;
+    }
+
+    .td_style{
+        vertical-align: middle;
+    }
+	 .td_style{
+        vertical-align: middle;
+    }
+	
+	/*chris's stuff below */
+	
+	h1{
+	font-family: 'Open Sans', sans-serif; font-weight: 600;
+	color : #FF9933;
+	font-size : 205%;
+	font-weight: lighter;
+	}
+	h2{
+	font-family: 'Open Sans', sans-serif; font-weight: 300;
+	color : #59A8DF;
+	font-size : 130%;
+	font-weight: lighter;
+	}
+	/*hacks for table */
+	.text-success{
+    font-family : ;
+	color : #000000;
+	font-size : 135%;
+	font-weight: lighter;
+	padding: 50px 0px 0px 0px;
+	letter-spacing: 2px;
+	margin:  50px 0px 0px 0px;
+	baseline-shift: sub;
+    }
+	text-info{
+	font-family : ;
+	color : #000000;
+	font-size : 135%;
+	font-weight: lighter;
+	padding: 50px 0px 0px 0px;
+	letter-spacing: 2px;
+	margin:  50px 0px 0px 0px;
+	baseline-shift: sub;
+	}
+	.td_style{
+	
+    }
+	.table-condensed{
+	margin:  0px 0px 0px 0px;
+    }
+	.input-large{
+	margin: 20px 0px 0px 0px;
+    }
+	login-field{
+	margin: 0px 0px 0px 0px;
+    }
+	so_checkbox_all{
+	font-family : ;
+	color : #000000;
+	font-size : 135%;
+	font-weight: bold;
+	padding: 50px 0px 0px 0px;
+	letter-spacing: 2px;
+	margin:  50px 0px 0px 0px;
+    }
+	so_myplacerules input-large login-field td_style{
+	}
+		
+	//  Sticky Footer + Responsive
+	/ ---------------------------
+
+	@footer-height: 300px;  
+	@footer-height-large: 250px;        //Larger width -> less height
+	@footer-height-tablet: 350px;       //Smaller -> more height needed
+
+
+	//Sticky Footer (http://ryanfait.com/sticky-footer/)
+	//--------------------------------------------------
+	html, body {
+    height: 100%;   
+	} 
+	.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -@footer-height;
+	} 
+	footer, .footer-push { 
+    height: @footer-height;
+	}  
+
+	// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+	// --------------------------------------------------
+
+	@media (max-width: 767px) {
+    .wrapper {
+        min-height: 0;
+        height: auto;
+        margin: 0 auto;
+    } 
+
+    footer, .footer-push { 
+        height: auto; 
+        margin: 0 -20px; 
+        .container{
+            padding: 0 20px;
+         }
+    }
+
+	}
+
+
+	// PORTRAIT TABLET TO DEFAULT DESKTOP
+	// ----------------------------------
+
+	@media (min-width: 768px) and (max-width: 979px) {
+    .wrapper {
+        margin: 0 auto -@footer-height-tablet;
+    } 
+    footer, .footer-push { 
+        height: @footer-height-tablet;
+    }  
+	}
+
+
+	// LARGE DESKTOP & UP
+	// ------------------
+
+	@media (min-width: 1200px) {
+    .wrapper {
+        margin: 0 auto -@footer-height-large;
+    } 
+    footer, .footer-push { 
+        height: @footer-height-large;
+    }
+	}
+
+	
+</style>
+
+
+<br>
+<div class="container">
+    <div class="row">
+            <!-- I turned this off: <span class="span12 alert alert-info">Bring the below private emails to my stream:</span> -->
+            
+            <span class="span12"> <h1>Connect Your Personal Emails to Your Social Streams </h1></span>           
+            <span class="span12"> <h2>Ut wisi quis nostrud enim ad minim veniam, quis nostrud exerci tatio nenim adquis nostrud minim. 
+ </h2></span>
+            
+    </div>
+
+    <div class="row">
+        <div class="span12">
+            <table class="table table-condensed">
+                <thead>
+                    <tr><td></td>
+                    <td>Multi-value fields. Use commas between words. I.e. Subject contains: Joe,action item,important </td>
+                </tr></thead>
+                
+                <tbody><tr>
+                    <td class="td_style">
+                        <input class="so_checkbox" id="checkbox4" type="checkbox" inputid="input4" value="">&nbsp;
+                    <span class="text  text-success">Subject contains
+                    </span></td>
+
+                    <td class="td_style ">
+                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox4" id="input4" type="text" value="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td_style">
+                        <input class="so_checkbox" id="checkbox5" type="checkbox" inputid="input5" value="">&nbsp;
+                    <span class="text  text-success">'Sent-to' contains
+                    </span></td>
+
+                    <td class="td_style ">
+                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox5" id="input5" type="text" value="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td_style">
+                        <input class="so_checkbox" id="checkbox6" type="checkbox" inputid="input6" value="">&nbsp;
+                    <span class="text  text-success">'Sent-from' contains
+                    </span></td>
+
+                    <td class="td_style ">
+                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox6" id="input6" type="text" value="">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td_style">
+                        <input allemail="true" class="so_checkbox_all" id="checkbox7" type="checkbox" inputid="input7" value="">&nbsp;
+                    <span class="text  text-info ">Bring my entire inbox
+                    </span></td>
+
+                    <td class="td_style  spinner ">
+                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox7" id="input7" type="text" value="">
+                    </td>
+                </tr>
+                
+            </tbody></table>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="span2 offset10">
+            <button class="btn btn-custom">Save</button>
+            <span><img src="resources/images/spinner.gif" id="spinner" width="24px" height="24px" class="spinner"></span>
+        </div>
+        <div class="span5">
+            <span id="saveSuccess" class="spinner label label-success">Information Saved Successfully</span>
+        </div>
+    </div>
+</div></div></div>
+    </div>
+    
+
+<div id="error"></div>
+
+
+<script type="text/javascript">
+    var session = {};
+    session.loggedInUser = '{"userName":"ilan@streamonce.com","name":"ilan@streamonce.com","id":null,"enabled":true,"roles":[{}],"oathToken":null,"userSocialGroups":[],"userSystemConfigurations":[],"systemType":"jive","dateCreated":null,"dateModified":null,"serverNode":null,"password":""}' || "{}";
+    session.locale = 'en' || "";
+</script>
+
+
+<script data-main="resources/js/main" src="/resources/js/libs/require/require.js"></script>
+<script src="/resources/js/libs/jquery/jquery-min.js"></script>
+<script src="/resources/js/libs/jqueryui/js/jquery-ui-1.9.0.custom.min.js"></script>
+<script src="/resources/js/libs/bootstrap/js/bootstrap.js"></script>
+
+<!-- Chris Added -->
+</div>
+
+<footer>
+		<div class="container2 row-fluid">
+    			<div class="span2">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2012 StreamOnce, Inc</p>
+            	</div>
+    			<div class="span1 offset6">
+				<p><a href="#">Home</a></p>
+            	</div>
+            	<div class="span1">
+				<p><a href="#">About</a></p>
+            	</div>
+            	<div class="span1">
+				<p><a href="#">Contact</a></p>
+            	</div>
+                
+                	
+		</div>	
+</footer>
+
+
+</body></html>

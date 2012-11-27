@@ -1,0 +1,15 @@
+{
+  "name": "streamonce-demo",
+  "description": "Created a quick node project to easily push to heroku for remote testing",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start":"node server"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "ejs":"*",
+    "less":"*",
+    "less-middleware":"*"
+  }
+}
