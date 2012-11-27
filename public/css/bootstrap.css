@@ -115,6 +115,9 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+/* ============================= */
+/* = WK - 11/26/12 - overrides = */
+/* ============================= */
 .clearfix {
   *zoom: 1;
 }
@@ -855,7 +858,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 3px solid #fe9e5d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -922,7 +925,7 @@ input[type="file"] {
 }
 select {
   width: 220px;
-  border: 1px solid #cccccc;
+  border: 1px solid #fe9e5d;
   background-color: #ffffff;
 }
 select[multiple],
@@ -941,7 +944,7 @@ input[type="checkbox"]:focus {
 .uneditable-textarea {
   color: #999999;
   background-color: #fcfcfc;
-  border-color: #cccccc;
+  border-color: #fe9e5d;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -4990,9 +4993,3 @@ a.badge:hover {
 /* ========================================== */
 /* = Custom styles 11/26/12 - William Kasel = */
 /* ========================================== */
-.testing_less_bitch {
-  background: #123123;
-}
-.one_more_time {
-  background: #fff;
-}
