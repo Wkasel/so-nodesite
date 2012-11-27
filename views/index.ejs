@@ -21,175 +21,178 @@
         
     
 
+</head>
+<body>
+  <div id="header"><div><div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+      <div class="container-fluid">
 
-<!-- Chris Added -->
-<div class="wrapper">
+          <!--add placeholder for menus in small resolution screens-->
 
-    <div id="header"><div><div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">streamOnce</a>
+          <!--build the navigation menu-->
+          <!--for action menus (with no sub menus) create a one item list-->
 
-            <!--add placeholder for menus in small resolution screens-->
-            
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">streamOnce</a>
-            <!--build the navigation menu-->
-            <!--for action menus (with no sub menus) create a one item list-->
-            
 
-            
-            <ul class="nav">
 
-                <!--if there's a tooltip then add it-->
-                <li class=""><a href="#" action="content" rel="tooltip" title="content">Content</a>
-                </li><li><a href="#" action="teamplace" rel="tooltip" title="teamplace">Team Places</a>
-                </li><li class="active"><a href="#" action="myplace" rel="tooltip" title="myplace">My Social Inbox</a>
-                </li>
+          <ul class="nav">
 
-            </ul>
+              <!--if there's a tooltip then add it-->
+              <li class=""><a href="#" action="content" rel="tooltip" title="content">Content</a>
+              </li><li><a href="#" action="teamplace" rel="tooltip" title="teamplace">Team Places</a>
+              </li><li class="active"><a href="#" action="myplace" rel="tooltip" title="myplace">My Social Inbox</a>
+              </li>
 
-            <ul class="nav pull-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ilan@streamonce.com <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <!--<li class="divider"></li>-->
-                        <li><a href="#" action="logout"><i class="icon-off"></i> logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <!--</div>-->
+          </ul>
+
+          <ul class="nav pull-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">ilan@streamonce.com <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                      <!--<li class="divider"></li>-->
+                      <li><a href="#" action="logout"><i class="icon-off"></i> logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+
+          <!--</div>-->
+      </div>
+  </div>
+  </div></div></div><!--/header - /div - /navbar-fixed-top-->
+  <!-- Chris Added -->
+  <div class="wrapper">
+      <div class="main"> <!-- added for footer support-->
+      
+        <div id="breadcrumbs"></div>
+        <div id="content">
+            <div id="content_header"></div>
+            <div id="content_body"></div>
         </div>
-    </div>
-</div></div></div>
-    <div id="breadcrumbs"></div>
-    <div id="content">
-        <div id="content_header"></div>
-        <div id="content_body"><div>
-<br>
-<div class="container">
-    <div class="row">
-            <!-- I turned this off: <span class="span12 alert alert-info">Bring the below private emails to my stream:</span> -->
+          
+        <div class="container">
             
-            <span class="span12"> <h1>Connect Your Personal Emails to Your Social Streams </h1></span>           
-            <span class="span12"> <h2>Ut wisi quis nostrud enim ad minim veniam, quis nostrud exerci tatio nenim adquis nostrud minim. </h2></span>
+            <div class="row">
+                    <!-- I turned this off: <span class="span12 alert alert-info">Bring the below private emails to my stream:</span> -->
+                    <span class="span12"> <h1>Connect Your Personal Emails to Your Social Streams </h1></span>           
+                    <span class="span12"> <h2>Add new emails to your stream:</h2></span>
+            </div>
             
-    </div>
-
-    <div class="row">
-        <div class="span12">
-            <table class="table table-condensed">
-                <thead>
-                    <tr><td></td>
-                    <td>Multi-value fields. Use commas between words. I.e. Subject contains: Joe,action item,important </td>
-                </tr></thead>
+            <div class="row">
+              <span class="span9 offset3"><p>Multi-value fields. Use commas between words. I.e. Subject contains: Joe,action item,important </p></span>
+              <div class="span12">
+                <hr />
+                <!-- form row item-->
+                <div class="row so_form-list-row">
+                  <div class="span3">
+                    <label for="checkbox4" class="so_check-label">
+                        <input class="styled" id="checkbox1" type="checkbox" inputid="input1" value="" />
+                      Subject contains
+                    </label>
+                  </div><!-- /span3-->
+                  <div class="span9">
+                    <input class="span9" checkboxid="checkbox1" id="input1" type="text" />
+                  </div>
+                </div>
+                <!-- /form row item-->
+                <hr />
+                <!-- form row item-->
+                <div class="row so_form-list-row">
+                  <div class="span3">
+                    <label for="checkbox4" class="so_check-label">
+                      <input class="styled" id="checkbox2" type="checkbox" inputid="input2" value="">
+                      &quot;Sent-From&quot; contains
+                      </label>
+                  </div>
+                  <div class="span9">
+                    <input class="span9" checkboxid="checkbox2" id="input2" type="text" />
+                  </div>
+                </div>
+                <!-- /form row item-->
+                <hr />
+                <!-- form row item-->
+                <div class="row so_form-list-row">
+                  <div class="span3">
+                    <label for="checkbox4" class="so_check-label">
+                      <input class="styled" id="checkbox3" type="checkbox" inputid="input3" value="">
+                      &quot;Sent-To&quot; contains
+                      </label>
+                  </div>
+                  <div class="span9">
+                    <input class="span9" checkboxid="checkbox3" id="input3" type="text" />
+                  </div>
+                </div>
+                <!-- /form row item-->
+                <hr />
+                 <!-- form row item-->
+                  <div class="row so_form-list-row">
+                    <div class="span3">
+                      <label for="checkbox4" class="so_check-label so_label-highlighted">
+                        <input class="styled" id="checkbox5" type="checkbox" inputid="input5" value="">
+                        Bring my entire inbox
+                        </label>
+                    </div>
+                    <div class="span9">
+                      
+                    </div>
+                  </div>
+                  <!-- /form row item-->
                 
-                <tbody><tr>
-                    <td class="td_style">
-                        <input class="so_checkbox" id="checkbox4" type="checkbox" inputid="input4" value="">&nbsp;
-                    <span class="text  text-success">Subject contains
-                    </span></td>
-
-                    <td class="td_style ">
-                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox4" id="input4" type="text" value="">
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td class="td_style">
-                        <input class="so_checkbox" id="checkbox5" type="checkbox" inputid="input5" value="">&nbsp;
-                    <span class="text  text-success">'Sent-to' contains
-                    </span></td>
-
-                    <td class="td_style ">
-                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox5" id="input5" type="text" value="">
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td class="td_style">
-                        <input class="so_checkbox" id="checkbox6" type="checkbox" inputid="input6" value="">&nbsp;
-                    <span class="text  text-success">'Sent-from' contains
-                    </span></td>
-
-                    <td class="td_style ">
-                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox6" id="input6" type="text" value="">
-                    </td>
-                </tr>
-                
-                <tr>
-                    <td class="td_style">
-                        <input allemail="true" class="so_checkbox_all" id="checkbox7" type="checkbox" inputid="input7" value="">&nbsp;
-                    <span class="text  text-info ">Bring my entire inbox
-                    </span></td>
-
-                    <td class="td_style  spinner ">
-                        <input disabled="true" class="so_myplacerules input-large login-field td_style" checkboxid="checkbox7" id="input7" type="text" value="">
-                    </td>
-                </tr>
-                
-            </tbody></table>
+              </div> <!-- /span12-->
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-
-<div class="container">
-    <div class="row">
-        <div class="span2 offset10">
-            <button class="btn btn-custom">Save</button>
-            <span><img src="resources/images/spinner.gif" id="spinner" width="24px" height="24px" class="spinner"></span>
+        <div class="container">
+          <div class="row">
+              <div class="span2 offset10">
+                  <button class="btn btn-custom">Save</button>
+                  <span><img src="resources/images/spinner.gif" id="spinner" width="24px" height="24px" class="spinner"></span>
+              </div>
+              <div class="span5">
+                  <span id="saveSuccess" class="spinner label label-success">Information Saved Successfully</span>
+              </div>
+          </div>
         </div>
-        <div class="span5">
-            <span id="saveSuccess" class="spinner label label-success">Information Saved Successfully</span>
-        </div>
-    </div>
-</div></div></div>
-    </div>
-    
+        <div id="error"></div>
 
-<div id="error"></div>
+      </div> <!-- /main-->
+    </div> <!--/wrapper-->
+<footer class="footer-push">
+		<div class="container">
+		  <div class="row">
+    			<div class="span3">
+    	      <!-- &nbsp;&nbsp;&nbsp;&nbsp;&copy;  -->
+				    <p>2012 StreamOnce, Inc</p>
+          </div>
+    			<div class="span1 offset5">
+				    <p><a href="#">Home</a></p>
+          </div>
+          <div class="span1">
+				    <p><a href="#">About</a></p>
+          </div>
+          <div class="span1">
+				    <p><a href="#">Contact</a></p>
+          </div>
+        </div>	
+		</div>	
+</footer>
 
-
+<!-- ============================= -->
+<!-- = Javascripts at the bottom = -->
+<!-- ============================= -->
 <script type="text/javascript">
     var session = {};
     session.loggedInUser = '{"userName":"ilan@streamonce.com","name":"ilan@streamonce.com","id":null,"enabled":true,"roles":[{}],"oathToken":null,"userSocialGroups":[],"userSystemConfigurations":[],"systemType":"jive","dateCreated":null,"dateModified":null,"serverNode":null,"password":""}' || "{}";
     session.locale = 'en' || "";
 </script>
 
-
-<script data-main="resources/js/main" src="/resources/js/libs/require/require.js"></script>
-<script src="/resources/js/libs/jquery/jquery-min.js"></script>
-<script src="/resources/js/libs/jqueryui/js/jquery-ui-1.9.0.custom.min.js"></script>
-<script src="/resources/js/libs/bootstrap/js/bootstrap.js"></script>
-
-<!-- Chris Added -->
-</div>
-
-<footer>
-		<div class="container2 row-fluid">
-    			<div class="span2">
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&copy; 2012 StreamOnce, Inc</p>
-            	</div>
-    			<div class="span1 offset6">
-				<p><a href="#">Home</a></p>
-            	</div>
-            	<div class="span1">
-				<p><a href="#">About</a></p>
-            	</div>
-            	<div class="span1">
-				<p><a href="#">Contact</a></p>
-            	</div>
-                
-                	
-		</div>	
-</footer>
-
-
+<script src="/js/checkbox.js"></script>
+<!-- <script data-main="resources/js/main" src="/resources/js/libs/require/require.js"></script> -->
+<script src="/js/libs/jquery/jquery-min.js"></script>
+<script src="/js/libs/jqueryui/js/jquery-ui-1.9.0.custom.min.js"></script>
+<script src="/js/libs/bootstrap/js/bootstrap.js"></script>
 </body></html>
